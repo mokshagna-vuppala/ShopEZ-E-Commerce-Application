@@ -1,0 +1,88 @@
+.AuthenticatePage {
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: linear-gradient(135deg, #e0e0e0, #ffffff); /* Gradient background for a modern touch */
+}
+
+.authForm {
+    padding: 30px;
+    width: 350px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    text-align: center;
+    background-color: #1f1f1f; /* Dark grey background for the form */
+    border-radius: 15px;
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.2);
+    font-family: 'Work Sans', sans-serif;
+    color: #ffffff; /* White text color for contrast */
+}
+
+.authForm h2 {
+    margin-bottom: 20px;
+    font-family: 'Poppins', sans-serif;
+    color: #ffffff; /* White text color for the heading */
+    font-size: 2rem;
+}
+
+.authFormInputs {
+    width: 100%;
+}
+
+.authFormInputs label {
+    color: #d0d0d0; /* Light grey for labels */
+    font-size: 0.9rem;
+    display: block;
+    margin-bottom: 8px;
+}
+
+.authFormInputs input,
+.authForm select {
+    width: 100%;
+    height: 45px;
+    color: #1f1f1f; /* Dark grey text color */
+    border: 2px solid #2d2d2d; /* Darker grey border */
+    background-color: #333; /* Dark grey background for inputs */
+    border-radius: 8px;
+    padding: 0 12px;
+    font-size: 1rem;
+    margin-bottom: 20px;
+    transition: border-color 0.3s, background-color 0.3s;
+}
+
+.authFormInputs input:focus,
+.authForm select:focus {
+    border-color: #003366; /* Navy blue border on focus */
+    background-color: #444; /* Slightly lighter grey on focus */
+    outline: none;
+}
+
+.authForm button {
+    background-color: #003366; /* Navy blue */
+    color: #ffffff; /* White text */
+    font-weight: bold;
+    height: 50px;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    transition: background-color 0.3s, transform 0.2s;
+}
+
+.authForm button:hover {
+    background-color: #002244; /* Darker navy blue on hover */
+    transform: translateY(-2px); /* Slight lift effect on hover */
+}
+
+.authForm p {
+    margin-top: 20px;
+    color: #cccccc; /* Light grey text color */
+}
+
+.authForm p span {
+    color: #ffffff; /* White text for links */
+    cursor: pointer;
+    text-decoration: underline;
+}

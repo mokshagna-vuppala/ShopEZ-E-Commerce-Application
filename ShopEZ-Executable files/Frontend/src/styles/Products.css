@@ -1,0 +1,135 @@
+/* Container for the products section */
+.products-container {
+    display: flex;
+    width: 100%;
+    padding: 2rem;
+    gap: 2rem;
+    background-color: #f8f8f8; /* Light grey background for the entire section */
+  }
+  
+  /* Filter section */
+  .products-filter {
+    flex: 1;
+    border-right: 1px solid #ddd; /* Light grey border for separation */
+    padding-right: 2rem;
+    background-color: #fff; /* White background for the filter section */
+  }
+  
+  /* Title in the filter section */
+  .products-filter h4 {
+    margin-bottom: 1rem;
+    font-size: 1.5rem;
+    color: #333; /* Dark grey for titles */
+  }
+  
+  /* Filter section body */
+  .product-filters-body {
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+  }
+  
+  /* Filter category titles */
+  .product-filters-body h6 {
+    margin-bottom: 0.5rem;
+    font-size: 1.2rem;
+    color: #555; /* Medium grey for filter categories */
+  }
+  
+  /* Filter controls */
+  .filter-sort select,
+  .sub-filter-body input[type="checkbox"] + label {
+    display: block;
+    margin-bottom: 0.5rem;
+    font-size: 1rem;
+    color: #333; /* Dark grey for filter options */
+  }
+  
+  .filter-sort select {
+    padding: 0.5rem;
+    border: 1px solid #ccc; /* Light grey border for select dropdown */
+    border-radius: 5px;
+  }
+  
+  /* Main products display area */
+  .products-body {
+    flex: 3;
+    padding-left: 2rem;
+  }
+  
+  /* Title of the product section */
+  .products-body h3 {
+    margin-bottom: 2rem;
+    font-size: 2rem;
+    color: #444; /* Darker grey for section titles */
+  }
+  
+  /* Grid layout for product items */
+  .products {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(250px, 1fr)); /* Responsive columns */
+    gap: 2rem;
+  }
+  
+  /* Individual product card */
+  .product-item {
+    background-color: #fff;
+    border-radius: 5px;
+    box-shadow: 0 0 15px rgba(0, 0, 0, 0.1); /* Soft shadow for product cards */
+    overflow: hidden;
+    transition: transform 0.3s ease;
+  }
+  
+  /* Hover effect for product card */
+  .product-item:hover {
+    transform: translateY(-10px);
+  }
+  
+  /* Image inside the product card */
+  .product img {
+    width: 100%;
+    height: 200px;
+    object-fit: cover; /* Ensure image covers the container */
+  }
+  
+  /* Product data section */
+  .product .product-data {
+    padding: 1rem;
+  }
+  
+  /* Product title */
+  .product .product-data h6 {
+    font-size: 1.2rem;
+    color: #333; /* Dark grey for product titles */
+    margin-bottom: 0.5rem;
+  }
+  
+  /* Product description */
+  .product .product-data p {
+    font-size: 0.9rem;
+    color: #777; /* Light grey for product descriptions */
+    margin-bottom: 1rem;
+  }
+  
+  /* Product pricing */
+  .product .product-data h5 {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    font-size: 1.2rem; /* Adjusted size for readability */
+    color: #333; /* Dark grey for prices */
+    margin: 0;
+  }
+  
+  /* Strikethrough price */
+  .product .product-data h5 s {
+    color: #ff6565; /* Red for strikethrough price */
+    font-size: 1rem;
+  }
+  
+  /* Current price */
+  .product .product-data h5 p {
+    color: #333; /* Dark grey for current price */
+    font-size: 1.2rem; /* Same size as the regular price for consistency */
+  }
+  

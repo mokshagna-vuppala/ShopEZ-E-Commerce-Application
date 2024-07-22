@@ -1,0 +1,167 @@
+/* Container for the individual product page */
+.IndividualProduct-page {
+    margin-top:20vh;
+    padding: 0 5vw;
+    background-color: #f4f4f4; /* Light grey background for contrast */
+    color: #333; /* Darker text color for readability */
+}
+
+/* Breadcrumb or navigation links */
+.IndividualProduct-page span {
+    display: flex;
+    align-items: center;
+    font-size: 1.2rem;
+    color: #003d6b; /* Navy blue */
+    margin-bottom: 2vh;
+}
+
+.IndividualProduct-page span p {
+    margin: 0;
+}
+
+/* Main container for the product details */
+.IndividualProduct-body {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 2vh;
+    gap: 2vw; /* Added space between the image and details */
+}
+
+/* Carousel image section */
+.IndividualProduct-body .carousel {
+    width: 50%;
+    height: 60vh;
+    border-radius: 8px; /* Rounded corners */
+    overflow: hidden;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Subtle shadow */
+}
+
+.IndividualProduct-body .carousel img {
+    width: 100%;
+    height: 100%;
+    object-fit: contain;
+}
+
+/* Carousel controls */
+.carousel-control-prev span, .carousel-control-next span {
+    background-color: rgba(0, 0, 0, 0.2); /* Darker control background */
+    padding: 12px;
+    border-radius: 50%;
+}
+
+/* Product data section */
+.IndividualProduct-data {
+    width: 45%;
+}
+
+.IndividualProduct-data h3 {
+    color: #003d6b; /* Navy blue */
+    margin-bottom: 1vh;
+    font-size: 2rem; /* Larger font size for title */
+}
+
+.IndividualProduct-data p {
+    color: #555; /* Medium grey for text */
+    font-size: 1rem;
+}
+
+.IndividualProduct-data span {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    margin-bottom: 1vh;
+}
+
+.IndividualProduct-data span h5 {
+    font-size: 1.4rem; /* Larger font size for price */
+    color: #003d6b; /* Navy blue for price */
+}
+
+.IndividualProduct-data span h5 b {
+    font-weight: bold;
+}
+
+.IndividualProduct-data span s {
+    color: #d9534f; /* Red for strikethrough price */
+    font-size: 1rem;
+}
+
+.IndividualProduct-data span p {
+    color: #003d6b; /* Navy blue for additional details */
+}
+
+.IndividualProduct-data h6 {
+    color: #7d8c92; /* Light grey-blue for secondary info */
+    margin-top: 2vh;
+}
+
+.IndividualProduct-data h6 b {
+    font-weight: bold;
+}
+
+.IndividualProduct-data span label {
+    color: #003d6b; /* Navy blue for labels */
+    font-size: 1.1rem;
+}
+
+.IndividualProduct-data span select {
+    font-size: 1rem;
+    color: #003d6b; /* Navy blue for select text */
+    border: 1px solid #003d6b; /* Navy blue border */
+    border-radius: 4px;
+    padding: 10px;
+}
+
+.IndividualProduct-data span select option {
+    color: #003d6b;
+}
+
+/* Buttons for purchasing or other actions */
+.productBuyingButtons {
+    margin-top: 5vh;
+    display: flex;
+    gap: 15px;
+}
+
+.productBuyingButtons button {
+    width: 180px;
+    padding: 12px 0;
+    font-weight: 600;
+    border: none;
+    border-radius: 5px;
+    font-size: 1rem;
+}
+
+.productBuyingButtons button:first-child {
+    background-color: #003d6b; /* Navy blue */
+    color: #fff; /* White text */
+}
+
+.productBuyingButtons button:last-child {
+    background-color: #d9534f; /* Red for secondary action */
+    color: #fff; /* White text */
+}
+
+/* Back button style */
+.back-button {
+    display: flex;
+    align-items: center;
+    background-color: #003d6b; /* Navy blue */
+    color: #fff; /* White text */
+    border: none;
+    padding: 10px 20px;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 1rem;
+    transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+.back-button:hover {
+    background-color: #fff; /* White background on hover */
+    color: #003d6b; /* Navy blue text on hover */
+}
+
+.back-button p {
+    margin: 0;
+    margin-left: 5px;
+}
